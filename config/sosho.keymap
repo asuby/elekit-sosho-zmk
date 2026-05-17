@@ -100,11 +100,11 @@
                 &trans &trans               &trans &trans      &trans  &out OUT_BLE                                    &trans         &trans
             >;
         };
-        scroll {
-            status = "reserved";
-        };
-        extra2 {
-            status = "reserved";
-        };
+        //scroll {
+        //    status = "reserved";
+        //};
+        //extra2 {
+        //    status = "reserved";
+        //};
     };
 };
