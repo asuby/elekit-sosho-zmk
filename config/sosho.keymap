@@ -31,7 +31,7 @@
 //    acceleration-exponent = <0>;   // 加速なし
 //};
 
-/{
+/ {
     combos {
         compatible = "zmk,combos";
 		//左クリックのコンボ 19はJのキー 20はKのキーに相当します。
