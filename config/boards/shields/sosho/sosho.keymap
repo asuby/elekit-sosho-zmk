@@ -63,9 +63,7 @@
             bindings = <&mo 4>;
         };
     };
-};
 
-/{
     keymap {
         compatible = "zmk,keymap";
 
