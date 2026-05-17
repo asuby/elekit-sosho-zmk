@@ -26,10 +26,10 @@
 };
 
 //スクロールの調整
-&msc {
-    time-to-max-speed-ms = <0>;   // 即座に最大速度（加速なし）
-    acceleration-exponent = <0>;   // 加速なし
-};
+//&msc {
+//    time-to-max-speed-ms = <0>;   // 即座に最大速度（加速なし）
+//    acceleration-exponent = <0>;   // 加速なし
+//};
 
 /{
     combos {
