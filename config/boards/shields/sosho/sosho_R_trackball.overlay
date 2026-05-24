@@ -22,11 +22,6 @@
 	// input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
 
-&mkp_input_listener {
-	// マウスクリックしてから0.5秒延長
-    input-processors = <&zip_temp_layer 5 500>;
-};
-
 &glidepoint_split { status = "okay"; };
 &glidepoint_split_listener {
     status = "okay";
