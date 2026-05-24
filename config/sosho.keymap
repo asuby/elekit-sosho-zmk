@@ -18,6 +18,7 @@
 
 &mkp_input_listener {
     // マウスクリックしてから0.5秒延長
+
     input-processors = <&zip_temp_layer 5 500>;
 };
 
@@ -128,10 +129,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &mkp MB3  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
-&trans  &trans                  &trans  &trans  &trans  &trans                      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans                  &trans  &trans  &trans  &trans                        &trans  &trans
             >;
         };
 
