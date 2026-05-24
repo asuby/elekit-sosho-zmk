@@ -18,8 +18,7 @@
 
 &mkp_input_listener {
     // マウスクリックしてから0.5秒延長
-
-    input-processors = <&zip_temp_layer 5 500>;
+    input-processors = <&zip_temp_layer mouse_layer 500>;
 };
 
 / {
@@ -127,7 +126,7 @@
             >;
         };
 
-        layer_5 {
+        mouse_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &mkp MB3  &trans  &trans
