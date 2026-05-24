@@ -1,10 +1,34 @@
 #include "sosho_R.dtsi"
 
+&zip_temp_layer {
+	// 下記以外のキーを押下でマウスレイヤーを抜ける
+    excluded-positions = <
+        18 // J
+        20 // L
+    >;
+	// キー入力から0.2秒間はマウスレイヤーに移動しない（誤作動防止）
+	require-prior-idle-ms = <200>;
+};
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 5 250>;
+};
+
 &spi1 { status = "okay"; };
 &trackball { status = "okay"; };
 &trackball_listener {
 	status = "okay";
-	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+	compatible = "zmk,input-listener";
+	device = <&trackball>;
+
+	// マウス操作で0.5秒間マウスレイヤーを有効にする
+	input-processors = <&zip_temp_layer 5 500>;
+	// input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+};
+
+&mkp_input_listener {
+	// マウスクリックしてから0.5秒延長
+    input-processors = <&zip_temp_layer 5 500>;
 };
 
 &glidepoint_split { status = "okay"; };
@@ -15,3 +39,4 @@
 
 &trackball_split { status = "okay"; };
 &trackball_split_listener { status = "okay"; };
+
