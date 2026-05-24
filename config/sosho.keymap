@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp Q     &kp W  &kp E  &kp R           &kp T        &kp Y            &kp U        &lt 5 I    &kp O    &kp P              &kp MINUS
-&kp TAB    &kp A     &kp S  &kp D  &kp F           &kp G        &kp H            &kp J        &kp K      &kp L    &kp SEMI           &kp COLON
-&kp LSHFT  &kp Z     &kp X  &kp C  &kp V           &kp B        &kp N            &kp M        &kp COMMA  &kp DOT  &kp SLASH          &kp BACKSLASH
-&kp LCTRL  &kp LALT                &kp LEFT_SHIFT  &lt 1 SPACE  &lt 4 BACKSPACE  &lt 2 ENTER                      &kp K_APPLICATION  &kp LGUI
+&kp ESC       &lt 3 Q       &kp W  &kp E  &kp R           &kp T        &kp Y            &kp U        &lt 5 I             &kp O                &kp P              &kp MINUS
+&kp TAB       &kp A         &kp S  &kp D  &kp F           &kp G        &kp H            &kp J        &kp K               &kp L                &kp SEMI           &kp COLON
+&kp LEFT_ALT  &kp Z         &kp X  &kp C  &kp V           &kp B        &kp N            &kp M        &mt LEFT_ALT COMMA  &mt LEFT_WIN PERIOD  &mt SLASH SLASH    &kp BACKSLASH
+&kp LCTRL     &kp LEFT_WIN                &kp LEFT_SHIFT  &lt 1 SPACE  &lt 4 BACKSPACE  &lt 2 ENTER                                           &kp K_APPLICATION  &kp LGUI
             >;
 
             //&msc_ec_lとrは、上のビヘイビアで作ったもの。
@@ -82,19 +82,19 @@
 
         layer_1 {
             bindings = <
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0  &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &kp DEL
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp PG_UP  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans                                    &trans        &trans  &trans     &trans                         &trans  &trans
+&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9         &kp N0     &kp N6     &kp CARET         &kp NON_US_BACKSLASH  &kp AT_SIGN     &kp N0  &kp DEL
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5     &kp PG_UP  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp UNDERSCORE  &trans  &trans
+&trans  &kp SLASH     &kp PERIOD    &kp COMMA     &kp SEMICOLON  &kp COLON  &kp PG_DN  &kp LEFT          &kp LEFT_ALT          &kp RIGHT       &trans  &trans
+&trans  &trans                                    &trans         &trans     &trans     &trans                                                  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans    &kp MINUS  &kp EQUAL  &trans     &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &kp LBKT  &kp RBKT   &kp NUBS   &trans     &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp SEMI  &kp SQT    &trans     &kp QMARK  &kp BSLH
-&trans  &trans                     &trans   &trans   &trans  &trans                          &trans     &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans              &kp MINUS       &kp EQUAL            &trans    &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp HOME  &kp PAGE_UP
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END   &kp PAGE_DOWN
+&trans  &trans                     &trans   &trans   &trans  &trans                                                   &trans    &trans
             >;
 
             //レイヤー2のときだけ、左手のエンコーダを回すとボリュームの上下ができるようになっています。
