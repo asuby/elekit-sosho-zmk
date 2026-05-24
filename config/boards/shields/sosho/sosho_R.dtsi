@@ -20,15 +20,3 @@
 &right_encoder{
     status =  "okay";
 };
-
-/ {
-    behaviors {
-        // オートマウスレイヤーの定義などに zip_xy_transform を適用
-        my_input_config: my_input_config {
-            compatible = "zmk,input-processor-transform";
-            #input-processor-cells = <0>;
-            // XとYの両方を反転させる場合は以下のように bitwise OR で指定
-            input-transform = <(INPUT_TRANSFORM_INVERT_X | INPUT_TRANSFORM_INVERT_Y)>;
-        };
-    };
-};
