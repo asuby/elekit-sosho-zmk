@@ -3,8 +3,8 @@
 &zip_temp_layer {
 	// 下記以外のキーを押下でマウスレイヤーを抜ける
     excluded-positions = <
-        18 // J
-        20 // L
+        19 // J
+        21 // L
     >;
 	// キー入力から0.2秒間はマウスレイヤーに移動しない（誤作動防止）
 	require-prior-idle-ms = <200>;
