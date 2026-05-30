@@ -18,9 +18,10 @@
 	device = <&trackball>;
 
 	// マウス操作で0.5秒間マウスレイヤーを有効にする
-	input-processors = 
-		<&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-		<&zip_temp_layer 5 500>;
+	input-processors = <
+		&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+		&zip_temp_layer 5 500
+	>;
 };
 
 &glidepoint_split { status = "okay"; };
