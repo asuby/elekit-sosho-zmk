@@ -5,11 +5,9 @@
     excluded-positions = <
         19
         21
-		31
-		33
     >;
 	// キー入力から0.2秒間はマウスレイヤーに移動しない（誤作動防止）
-	require-prior-idle-ms = <200>;
+	//require-prior-idle-ms = <200>;
 };
 
 &spi1 { status = "okay"; };
