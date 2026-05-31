@@ -2,10 +2,10 @@
 
 &zip_temp_layer {
 	// 下記（J, L）以外のキーを押下でマウスレイヤーを抜ける
-    excluded-positions = <
-        19
-        21
-    >;
+    //excluded-positions = <
+    //    19
+    //    21
+    //>;
 	// キー入力から0.2秒間はマウスレイヤーに移動しない（誤作動防止）
 	require-prior-idle-ms = <200>;
 };
@@ -20,7 +20,7 @@
 	// マウス操作で0.5秒間マウスレイヤーを有効にする
 	input-processors = <
 		&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-		&zip_temp_layer 5 500
+		&zip_temp_layer 5 1000
 	>;
 };
 
