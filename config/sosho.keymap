@@ -42,33 +42,33 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        //左クリックのコンボ 19はJのキー 20はKのキーに相当します。
-
-        combo_LCLK {
-            timeout-ms = <50>;
-            key-positions = <19 7>;
-            bindings = <&mkp LCLK>;
-        };
-
-        //右クリックのコンボ 20 K 21 L
-
-        combo_RCLK {
-            timeout-ms = <50>;
-            key-positions = <21 9>;
-            bindings = <&mkp RCLK>;
-        };
-
-        //ホイールクリックのコンボ 19 J 21 L
-
-        combo_MCLK {
-            timeout-ms = <90>;
-            key-positions = <20 8>;
-            bindings = <&mkp MCLK>;
-        };
-    };
+//    combos {
+//        compatible = "zmk,combos";
+//
+//        //左クリックのコンボ 19はJのキー 20はKのキーに相当します。
+//
+//        combo_LCLK {
+//            timeout-ms = <50>;
+//            key-positions = <19 7>;
+//            bindings = <&mkp LCLK>;
+//        };
+//
+//        //右クリックのコンボ 20 K 21 L
+//
+//        combo_RCLK {
+//            timeout-ms = <50>;
+//            key-positions = <21 9>;
+//            bindings = <&mkp RCLK>;
+//        };
+//
+//        //ホイールクリックのコンボ 19 J 21 L
+//
+//        combo_MCLK {
+//            timeout-ms = <90>;
+//            key-positions = <20 8>;
+//            bindings = <&mkp MCLK>;
+//        };
+//    };
 
     keymap {
         compatible = "zmk,keymap";
