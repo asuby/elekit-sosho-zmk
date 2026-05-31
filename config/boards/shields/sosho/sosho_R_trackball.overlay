@@ -12,51 +12,27 @@
 
 &spi1 { status = "okay"; };
 &trackball { status = "okay"; };
-//&trackball_listener {
-//	status = "okay";
-//	compatible = "zmk,input-listener";
-//	device = <&trackball>;
-//
-//	// マウス操作で0.5秒間マウスレイヤーを有効にする
-//	input-processors = <
-//		&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-//		&zip_temp_layer 5 10000
-//	>;
-//
-//	// カーソル移動をスクロールに変更
-//	scroller {
-//        layers = <1>;
-//        input-processors = <
-//            &zip_xy_to_scroll_mapper
-//            &zip_scroll_scaler 1 50
-//			&zip_scroll_transform INPUT_TRANSFORM_X_INVERT
-//        >;
-//    };
-//};
+&trackball_listener {
+	status = "okay";
+	compatible = "zmk,input-listener";
+	device = <&trackball>;
 
-/ {
-	trackball_listener: trackball_listener {
-		status = "okay";
-		compatible = "zmk,input-listener";
-		device = <&trackball>;
+	// マウス操作で0.5秒間マウスレイヤーを有効にする
+	input-processors = <
+		&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+		&zip_temp_layer 5 10000
+	>;
 
-		// マウス操作で0.5秒間マウスレイヤーを有効にする
-		input-processors = <
-			&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-			&zip_temp_layer 5 10000
-		>;
-
-		// カーソル移動をスクロールに変更
-		scroller {
-			layers = <1>;
-			input-processors = <
-				&zip_xy_to_scroll_mapper
-				&zip_scroll_scaler 1 50
-				&zip_scroll_transform INPUT_TRANSFORM_X_INVERT
-			>;
-		};
-	};
-}
+	// カーソル移動をスクロールに変更
+	scroller {
+        layers = <1>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 1 50
+			&zip_scroll_transform INPUT_TRANSFORM_X_INVERT
+        >;
+    };
+};
 
 &glidepoint_split { status = "okay"; };
 &glidepoint_split_listener {
