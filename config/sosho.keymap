@@ -136,6 +136,15 @@
             >;
         };
 
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans                  &trans  &trans  &trans  &trans                     &trans  &trans
+            >;
+        };
+
         //scroll { status = "reserved"; };
         //extra2 { status = "reserved"; };
     };
