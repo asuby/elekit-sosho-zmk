@@ -42,33 +42,33 @@
         };
     };
 
-//    combos {
-//        compatible = "zmk,combos";
-//
-//        //左クリックのコンボ 19はJのキー 20はKのキーに相当します。
-//
-//        combo_LCLK {
-//            timeout-ms = <50>;
-//            key-positions = <19 7>;
-//            bindings = <&mkp LCLK>;
-//        };
-//
-//        //右クリックのコンボ 20 K 21 L
-//
-//        combo_RCLK {
-//            timeout-ms = <50>;
-//            key-positions = <21 9>;
-//            bindings = <&mkp RCLK>;
-//        };
-//
-//        //ホイールクリックのコンボ 19 J 21 L
-//
-//        combo_MCLK {
-//            timeout-ms = <90>;
-//            key-positions = <20 8>;
-//            bindings = <&mkp MCLK>;
-//        };
-//    };
+    //    combos {
+    //        compatible = "zmk,combos";
+    //
+    //        //左クリックのコンボ 19はJのキー 20はKのキーに相当します。
+    //
+    //        combo_LCLK {
+    //            timeout-ms = <50>;
+    //            key-positions = <19 7>;
+    //            bindings = <&mkp LCLK>;
+    //        };
+    //
+    //        //右クリックのコンボ 20 K 21 L
+    //
+    //        combo_RCLK {
+    //            timeout-ms = <50>;
+    //            key-positions = <21 9>;
+    //            bindings = <&mkp RCLK>;
+    //        };
+    //
+    //        //ホイールクリックのコンボ 19 J 21 L
+    //
+    //        combo_MCLK {
+    //            timeout-ms = <90>;
+    //            key-positions = <20 8>;
+    //            bindings = <&mkp MCLK>;
+    //        };
+    //    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -76,7 +76,7 @@
         default_layer {
             bindings = <
 &kp ESC       &lt 3 Q       &kp W  &kp E  &kp R           &kp T        &kp Y            &kp U        &lt 5 I             &kp O                &kp P              &kp MINUS
-&kp TAB       &kp A         &kp S  &kp D  &kp F           &kp G        &kp H            &kp J        &kp K               &kp L                &kp SEMI           &mkp LCLK
+&kp TAB       &kp A         &kp S  &kp D  &kp F           &kp G        &kp H            &mkp MB1     &mkp LCLK           &kp L                &kp SEMI           &mkp LCLK
 &kp LEFT_ALT  &kp Z         &kp X  &kp C  &kp V           &kp B        &kp N            &kp M        &mt LEFT_ALT COMMA  &mt LEFT_WIN PERIOD  &mt SLASH SLASH    &kp BACKSLASH
 &kp LCTRL     &kp LEFT_WIN                &kp LEFT_SHIFT  &lt 1 SPACE  &lt 4 BACKSPACE  &lt 2 ENTER                                           &kp K_APPLICATION  &kp LGUI
             >;
