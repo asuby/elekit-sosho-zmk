@@ -12,6 +12,11 @@
 &i2c0  { status = "disabled"; };
 &i2c1  { status = "disabled"; };
 
+&lt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+};
+
 / {
 	/* キー入力に関する設定 */
     chosen {
