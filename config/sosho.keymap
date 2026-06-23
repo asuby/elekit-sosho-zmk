@@ -22,7 +22,7 @@
 };
 
 &lt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <600>;
     quick-tap-ms = <250>;
 };
 
