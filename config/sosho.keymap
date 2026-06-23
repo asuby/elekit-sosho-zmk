@@ -22,8 +22,8 @@
 };
 
 &lt {
-    tapping-term-ms = <600>;
-    quick-tap-ms = <250>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <150>;
 };
 
 / {
