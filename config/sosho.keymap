@@ -30,7 +30,7 @@
 &mt {
     tapping-term-ms = <250>;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
+    require-prior-idle-ms = <175>;
 };
 
 / {
